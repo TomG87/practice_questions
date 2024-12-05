@@ -5,9 +5,13 @@ function dups(array) {
   var newArray = [];
 
   while (x < array.length) {
-    if (!x.includes(newArray(x)) {
-      x.push(newArray) } {
-        { else  {
-          x.push(newArray);
-        }
-      }
+    if (!newArray.includes(array[x])) {
+      newArray.push(array[x]);
+    } else {
+      x += 1;
+    }
+  }
+  return newArray;
+}
+
+console.log(dups(["John", "Taylor", "John"]));
