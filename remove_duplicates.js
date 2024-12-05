@@ -7,6 +7,7 @@ function dups(array) {
   while (x < array.length) {
     if (!newArray.includes(array[x])) {
       newArray.push(array[x]);
+      x += 1;
     } else {
       x += 1;
     }
