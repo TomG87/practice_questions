@@ -11,11 +11,17 @@
 // Expect any positive number between 1 and 1000.
 
 function addUp(number) {
-  if (number < 1 || number > 1000) {
-    return "Outside range of numbers.  Please choose a number between 1 and 1000";
-  } else {
-    return (number * (number + 1)) / 2;
+  // if (number < 1 || number > 1000) {
+  //   return "Outside range of numbers.  Please choose a number between 1 and 1000";
+  // } else {
+  //   return (number * (number + 1)) / 2;
+  // }
+
+  let sum = 0;
+  for (let i = 1; i <= number; i++) {
+    sum += i;
   }
+  return sum;
 }
 
-console.log(addUp(600));
+console.log(addUp(11));
