@@ -38,6 +38,6 @@ def birthday_cake_candles(array)
     x += 1
   end
   return count
-end
+end     
 
 p birthday_cake_candles([3, 3, 1, 3])
