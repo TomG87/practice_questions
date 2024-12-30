@@ -47,20 +47,25 @@
 # //  #####
 # // ######
 
-def staircase(number):
+def staircase(number)
   i = 1
 
-  while i <= number:
+  while i <= number
     row = ""
     j = 1
-    while j <= number:
-      if j <= number - i:
+    while j <= number
+      if j <= number - i
         row += " "
-      else:
+      else
         row += "#"
+      end
       j += 1
-    print(row)
+    end
+    puts row
     i += 1
+  end
+end
 
 staircase(6)
-  
+    
+
